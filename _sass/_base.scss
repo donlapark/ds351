@@ -76,3 +76,34 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+
+.UMLTable tr:nth-child(odd) td 
+{
+  background: #DFD;
+}
+
+.UMLTable tr:nth-child(even) td 
+{
+  background: #FFF;
+}
+
+.headerC
+{
+font-size: 17px;
+font-weight: normal;
+padding: 5px 10px;
+text-align: left;
+font-weight: bold;
+background-color: #0A5;
+color: #FFF;
+}
+
+.UMLTable td
+{
+padding: 3px 8px;
+}
+
+.UMLTable tr td
+{
+font-size: 17px;
+}
