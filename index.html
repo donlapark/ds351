@@ -1,33 +1,177 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+  <title>
+    
+      STAT351 &middot; Donlapark Ponnoprat
+    
+  </title>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" href="/public/logo2.png">
+  <link rel="shortcut icon" href="/public/logo2.png">
+  <link rel="alternate" type="application/atom+xml" title="Donlapark Ponnoprat" href="/atom.xml">
+</head>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+
+  <body>
+
+    <div class="container content">
+
+
+      <main>
+        <h4 style="font-size:30px">STAT711 | Statistical Learning for Data Science 1</h4>
+<h4><font size="+1">Winter 2020<br />
+  </font></h4>
+<h4><font size="+1">Time</font></h4>
+<ul>
+  <li>Sec 01 : Lecture: Tu 14:30-16:30 at SCB4202 Lab: F 14:30-16:30 at STB107</li>
+  <li>Sec 02 : Lecture: M 11:00-13:00 at SCB4202 Lab: Th 11:00-13:00 at STB207</li>
+</ul>
+
+<h4><font size="+1">Instructor</font></h4>
+<ul>
+  <li>Donlapark Ponnoprat (ดลภาค พรนพรัตน์)<br />
+E-mail: <code class="language-plaintext highlighter-rouge">donlapark.p--at--cmu.ac.th</code><br />
+Office: STB304<br /></li>
+</ul>
+
+<h4><font size="+1">References</font></h4>
+<ul>
+  <li>Trevor Hastie, Robert Tibshirani, Daniela Witten and Gareth James, An Introduction to Statistical Learning: with Applications in R <a href="https://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf">book</a> <a href="https://github.com/JWarmenhoven/ISLR-python">code in python</a></li>
+  <li>Rob J Hyndman and George Athanasopoulos, Forecasting: Principles and Practice
+(available online at https://otexts.com/fpp2)</li>
+  <li>Robert Nowak’s lecture notes on Statistical Signal Processing and Learning Theory <a href="https://nowak.ece.wisc.edu/ece830/">Link</a>.</li>
+</ul>
+<hr />
+
+<h4><font size="+1">Lecture Notes</font></h4>
+
+<table class="UMLTable" border="1" style="width: 100%;" nosave="">
+<thead class="headerC"><tr><th>Date</th><th>Topic</th><th>Notes/HW</th></tr></thead>
+<tr>
+<td> Oct 8 </td>
+<td> Random sample &amp; moment generating function
+</td>
+<td>
+<a href="Lecture15.pdf">Lecture 15</a>
+</td>
+</tr>
+<tr>
+<td> Oct 11 </td>
+<td> Sample mean &amp; variance, chi-squared and Student's t distribution
+</td>
+<td>
+<a href="Lecture16.pdf">Lecture 16</a><br />
+<a href="homework8.pdf">Homework 8</a>
+</td>
+</tr>
+<tr>
+<td> Oct 15 </td>
+<td> Sufficient statistics
+</td>
+<td>
+<a href="Lecture17.pdf">Lecture 17</a>
+</td>
+</tr>
+<tr>
+<td> Oct 18 </td>
+<td> Minimal sufficient statistics
+</td>
+<td>
+<a href="Lecture18.pdf">Lecture 18</a><br />
+<a href="homework9.pdf">Homework 9</a>
+</td>
+</tr>
+<tr>
+<td> Oct 22 </td>
+<td> Complete statistics, Basu's theorem
+</td>
+<td>
+<a href="Lecture19.pdf">Lecture 19</a>
+</td>
+</tr>
+<tr>
+<td> Oct 25 </td>
+<td> Rao-Blackwell theorem, UMVU, Lehmann-Scheffé theorem
+</td>
+<td>
+<a href="Lecture20.pdf">Lecture 20</a>
+</td>
+</tr>
+<tr>
+<td> Oct 29 </td>
+<td> MLE and its equivariant property
+</td>
+<td>
+<a href="Lecture21.pdf">Lecture 21</a><br />
+<a href="homework10.pdf">Homework 10</a>
+</td>
+</tr>
+<tr>
+<td> Nov 1 </td>
+<td> Fisher information, Cramér-Rao inequality
+</td>
+<td>
+<a href="Lecture22.pdf">Lecture 22</a>
+</td>
+</tr>
+<tr>
+<td> Nov 5 </td>
+<td> Bayesian estimators
+</td>
+<td>
+<a href="Lecture23.pdf">Lecture 23</a>
+</td>
+</tr>
+<tr>
+<td> Nov 8 </td>
+<td> Biasedness of Bayesian estimators, Minimax estimators
+</td>
+<td>
+<a href="Lecture24.pdf">Lecture 24</a><br />
+<a href="homework11.pdf">Homework 11</a>
+</td>
+</tr>
+<tr>
+<td> Nov 12 </td>
+<td> Hypothesis testing, Neyman-Pearson Lemma
+</td>
+<td>
+<a href="Lecture25.pdf">Lecture 25</a><br />
+</td>
+</tr>
+<tr>
+<td> Nov 15 </td>
+<td> One-sided hypothesis test, UMP
+</td>
+<td>
+<a href="Lecture26.pdf">Lecture 26</a><br />
+</td>
+</tr>
+<tr>
+<td> Nov 19 </td>
+<td> Likelihood ratio test, Wald test, Bayesian test
+</td>
+<td>
+<a href="Lecture27.pdf">Lecture 27</a><br />
+</td>
+</tr>
+</table>
+
+      </main>
+      <footer class="footer">
+        <small>
+            &nbsp; 
+        </small>
+      </footer>	
+
+    </div>
+
+    
+  </body>
+</html>
