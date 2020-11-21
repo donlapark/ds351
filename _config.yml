@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               Donlapark Ponnoprat
 tagline:             Chiang Mai University
-url:                 http://donlapark.github.io/ds351/
+url:                 http://donlapark.github.io/ds351
 markdown: kramdown
 baseurl:             ""
 kramdown:
