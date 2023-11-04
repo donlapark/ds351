@@ -1,1 +1,3 @@
-# 229351 Course Website
+---
+redirect_to: "https://donlapark.pages.dev/229351/"
+---
